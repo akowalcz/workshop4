@@ -439,7 +439,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span id="author" class="author">Andrzej Kowalczyk</span><br>
 <span id="email" class="email"><a href="mailto:andrzej@redhat.com">andrzej@redhat.com</a></span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">May 06, 2020</span>
+<span id="revdate">May 13, 2020</span>
 <br><span id="revremark">Draft</span>
 </div>
 <div id="toc" class="toc2">
@@ -467,13 +467,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#starting-up-logging-on-and-creating-a-project">Starting up - logging on and creating a project</a></li>
 <li><a href="#creating-your-first-application">Creating your first Application</a></li>
 <li><a href="#adding-additional-applications">Adding additional Applications</a></li>
-<li><a href="#interacting-with-openshift-through-the-command-line">Interacting with OpenShift through the Command Line</a>
-<ul class="sectlevel3">
-<li><a href="#option-1-installing-the-cli-on-localhost">Option 1: Installing the CLI on localhost</a></li>
-<li><a href="#option-2-use-a-pre-configured-docker-image-on-openshift">Option 2: Use a pre-configured docker image on OpenShift</a></li>
-</ul>
-</li>
-<li><a href="#setup-login">Using your terminal (both options)</a></li>
+<li><a href="#interacting-with-openshift-through-the-command-line">Interacting with OpenShift through the Command Line</a></li>
 <li><a href="#a-summary-of-application-interactions">A Summary of Application Interactions</a></li>
 </ul>
 </li>
@@ -606,7 +600,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://www.openshift.com/products/container-platform">https://www.openshift.com/products/container-platform</a></p>
 </li>
 <li>
-<p><a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a> (the Web Console URL for the Workshop)</p>
+<p><a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a> (the Web Console URL for the Workshop)</p>
 </li>
 </ul>
 </div>
@@ -648,7 +642,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><strong>The workshop was designed and tested on the Chrome browser and it is advised to avoid issues that this browser be used whenever possible</strong></p>
 </div>
 <div class="paragraph">
-<p>Open the browser and navigate to the console url <a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a></p>
+<p>Open the browser and navigate to the console url <a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a></p>
 </div>
 <div class="paragraph">
 <p>Logon using the user provided by the course administrator (userx where x is a unique number for your session)</p>
@@ -760,7 +754,7 @@ The attendee will be using a browser for interacting with both the OpenShift Con
 <div class="sect2">
 <h3 id="starting-up-logging-on-and-creating-a-project"><a class="anchor" href="#starting-up-logging-on-and-creating-a-project"></a>Starting up - logging on and creating a project</h3>
 <div class="paragraph">
-<p>Log on to cluster at <a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a> as 'userx', where x is the number assigned to you by the course administrator, password 'openshift'</p>
+<p>Log on to cluster at <a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a> as 'userx', where x is the number assigned to you by the course administrator, password 'openshift'</p>
 </div>
 <div class="paragraph">
 <p>Ensure you are on the Administrator View - at the top left of the UI is a selection box which describes the current view selected.</p>
@@ -948,10 +942,7 @@ integrated registry.</strong></p>
 <div class="sect2">
 <h3 id="adding-additional-applications"><a class="anchor" href="#adding-additional-applications"></a>Adding additional Applications</h3>
 <div class="paragraph">
-<p>Click on 'Topology'</p>
-</div>
-<div class="paragraph">
-<p>Click 'Add'</p>
+<p>Click 'Add+'</p>
 </div>
 <div class="paragraph">
 <p>Click 'From Catalog'</p>
@@ -1075,78 +1066,7 @@ The CLI is ideal in situations where you are:</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>The CLI is available using the oc command:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>oc {command}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For the duration of the course you will be using a provided Application hosted within OpenShift itself that you created as part of the pre-requisites. Whenever the instructions tell you to use the terminal use the tab you setup. If you haven&#8217;t completed the pre-requisites please complete them before proceeding</p>
-</div>
-<div class="paragraph">
-<p><strong>For the sakes of simplicity we advise you use the Terminal application described in the prerequisite section - the following instructions for installation are completely optional</strong></p>
-</div>
-<div class="paragraph">
-<p>If you want to optionally install the oc client or use the terminal applications plus additional command line tools, such as ODO and tkn, you have two options; either install <code>oc</code> on your localhost or use a docker image in OpenShift. The image option is pre-built and running already and is easier if you have a locked-down laptop and are unable to download and install additional applications.</p>
-</div>
-<div class="sect3">
-<h4 id="option-1-installing-the-cli-on-localhost"><a class="anchor" href="#option-1-installing-the-cli-on-localhost"></a>Option 1: Installing the CLI on localhost</h4>
-<div class="paragraph">
-<p>The easiest way to download the CLI is by accessing the Command Line Tools page on the web console from the question mark on the top right corner [ (?)&#8594; Command Line Tools ]</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/applicationbasics-5.png" alt="Command Line Tools">
-</div>
-</div>
-<div class="paragraph">
-<p>From this page you can download the oc and odo command line tools.</p>
-</div>
-<div class="paragraph">
-<p>If you wish to install the command line tools locally then you may also need to download and command line tools for OpenShift Pipelines (Tekton) and Kamel. Instructions on this is at the start of each chapter.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="option-2-use-a-pre-configured-docker-image-on-openshift"><a class="anchor" href="#option-2-use-a-pre-configured-docker-image-on-openshift"></a>Option 2: Use a pre-configured docker image on OpenShift</h4>
-<div class="paragraph">
-<p>This option installs and runs a docker image inside OpenShift that already has oc (and other command line tools) installed and configured. To install this image, follow the instructions in the prerequisites section.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="setup-login"><a class="anchor" href="#setup-login"></a>Using your terminal (both options)</h3>
-<div class="paragraph">
-<p>If this document refers to <em>your terminal</em> it will either be on your localhost or the containerised terminal depending on your option above.</p>
-</div>
-<div class="paragraph">
-<p>(Login options for the installed OC command line tool only).</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>In the Web Console, select the top right pulldown, choose <b class="button">Copy Login Command</b></p>
-</li>
-<li>
-<p>This will require you to login again using your credentials (to prove who you are) and will then display a web page with 'Display Token' on it. Select this link and copy the full line that begins with <code>oc login --token</code></p>
-</li>
-<li>
-<p>Paste this command into your terminal where you have access to run the <code>oc</code> command. Note that <code>oc</code> must be added to your PATH.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The response to executing the login command should look similar to that shown below :</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>Logged into "https://api.cluster-london-a6e1.london-a6e1.example.opentlc.com:6443" as "user1" using the token provided.
-
-You don't have any projects. You can try to create a new project, by running
-
-    oc new-project &lt;projectname&gt;</code></pre>
-</div>
+<p>As part of the pre-requisites for the workshop we created and started a terminal app. Go to that tab now (if you have closed it go back to the pre-reqs and follow the instructions for opening it).</p>
 </div>
 <div class="paragraph">
 <p>Make sure <code>oc</code> is working, type:</p>
@@ -1172,17 +1092,22 @@ Also see the <strong>Command-Line Reference</strong>: <a href="https://docs.open
 <div class="paragraph">
 <p>To explore the command line further execute the following commands and observe the results.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Change the X at the end of sandbox to your user number
+</td>
+</tr>
+</table>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>oc projects</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>User should have access to one project, explain the ability to access multiple projects</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>oc project sandboxX</code></pre>
+<pre class="highlight"><code>oc projects
+oc project sandboxX</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1265,7 +1190,7 @@ Volume Mounts, labelled targetting of Nodes and the like.</strong></p>
 <p>Note the metrics for the project</p>
 </div>
 <div class="paragraph">
-<p>Click on 'Workloads' and then select Pods to see the list of pods for the project as shown in the image below.</p>
+<p>Click on 'Workloads' on the left menu (not the project overview) and then select Pods to see the list of pods for the project as shown in the image below.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -1430,6 +1355,9 @@ Config Maps allow you to create groups of name/value pairs in objects that can b
 </div>
 <div class="paragraph">
 <p>Add “  env2: test”</p>
+</div>
+<div class="paragraph">
+<p>Make sure there is a space between the ':' and the data itself, otherwise it is invalid YAML and the editor will not allow you to save it.</p>
 </div>
 <div class="paragraph">
 <p>The YAML should look similar to the screenshot below, with your project name instead of sandbox99 and the name you have entered rather than CHANGETHIS.</p>
@@ -2249,7 +2177,7 @@ oc new-app https://github.com/marrober/workshop4.git --context-dir=attendee/myho
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>git clone https://github.com/utherp0/workshop4.git
-cd attendee/myholiday
+cd workshop4/attendee/myholiday
 cat adventure-route.yaml</code></pre>
 </div>
 </div>
@@ -2376,7 +2304,7 @@ Press Delete to remove the project.</p>
 <p>This chapter provides a developer-centric view of the fundamentals and capabilities of the SDN (Software Defined Network) that is used within OpenShift for Application connectivity.</p>
 </div>
 <div class="paragraph">
-<p>If you are not already logged on go to the UI URL at <a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a> and logon as 'userx' (x is the number provided to you) and password openshift.</p>
+<p>If you are not already logged on go to the UI URL at <a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a> and logon as 'userx' (x is the number provided to you) and password openshift.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2810,7 +2738,7 @@ For the majority of this chapter the attendee will need to pair up with another.
 </table>
 </div>
 <div class="paragraph">
-<p>If you are not already logged on go to the UI URL <a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a> and logon as 'userx' (x is the number provided to you) and password openshift.</p>
+<p>If you are not already logged on go to the UI URL <a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a> and logon as 'userx' (x is the number provided to you) and password openshift.</p>
 </div>
 <div class="paragraph">
 <p>If you do not already have a terminal tab running as defined in the pre-requisites please open one following the instructions in the pre-requisites</p>
@@ -3142,7 +3070,7 @@ Note that you cannot delete the other persons project.
 <div class="sect2">
 <h3 id="introduction-6"><a class="anchor" href="#introduction-6"></a>Introduction</h3>
 <div class="paragraph">
-<p>If you are not already logged on go to the UI URL <a href="http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-lju-4f55.lju-4f55.example.opentlc.com</a> and logon as userx (x is the number provided to you) and password openshift.</p>
+<p>If you are not already logged on go to the UI URL <a href="http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com" class="bare">http://console-openshift-console.apps.cluster-sofia-5db2.sofia-5db2.example.opentlc.com</a> and logon as userx (x is the number provided to you) and password openshift.</p>
 </div>
 <div class="paragraph">
 <p>If you do not already have a terminal tab running as defined in the pre-requisites please open one following the instructions in the pre-requisites</p>
